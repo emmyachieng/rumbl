@@ -1,9 +1,9 @@
 defmodule Rumbl.Accounts.User do
-  # defstruct [:id, :name, :username]
   use Ecto.Schema
   import Ecto.Changeset
 
   alias Rumbl.Accounts.Credential
+  alias Rumbl.Multimedia.Video
 
   schema "users" do
     field :name, :string
